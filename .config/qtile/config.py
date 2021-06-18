@@ -91,19 +91,8 @@ for i in groups:
     ])
 
 layouts = [
-    layout.MonadTall(border_focus='#e06c75', margin=8),
-    layout.Max(margin=8),
-    # Try more layouts by unleashing below layouts.
-    # layout.Stack(num_stacks=2),
-    # layout.Bsp(),
-    # layout.Matrix(),
-    # layout.MonadTall(),
-    # layout.MonadWide(),
-    # layout.RatioTile(),
-    # layout.Tile(),
-    # layout.TreeTab(),
-    # layout.VerticalTile(),
-    # layout.Zoomy(),
+    layout.MonadTall(border_focus="#e06c75", margin=12),
+    layout.Max(),
 ]
 
 widget_defaults = dict(
@@ -117,27 +106,38 @@ screens = [
     Screen(
         top=bar.Bar(
             [
-                widget.Sep(linewidth=0, padding=5),
-                widget.CurrentLayout(),
-                widget.GroupBox(),
-                widget.Prompt(),
-                widget.WindowName(),
-                widget.Chord(
-                    chords_colors={
-                        'launch': ("#ff0000", "#ffffff"),
-                    },
-                    name_transform=lambda name: name.upper(),
+                widget.CurrentLayoutIcon(
+                    background="#aaaaaa",
+                    scale=0.45,
+                    padding=0,
                 ),
-                widget.Systray(),
+                widget.GroupBox(
+                    background="#282c34",
+                    margin_y=3,
+                    margin_x=0,
+                    padding_y=10,
+                    padding_x=12,
+                    rounded=False,
+                    borderwidth=1,
+                    active="#ffffff",
+                    inactive="#aaaaaa",
+                    highlight_method="block",
+                    this_current_screen_border="#61afef",
+                ),
+                widget.WindowName(padding=10),
+                widget.Systray(
+                    background="#98c379",
+                    foreground="#282c34",
+                    padding=12,
+                ),
                 widget.Clock(
-                    foreground="#e5c07b",
-                    format=' %a %B %d   %H:%M',
-                    padding=6
-                ),
-                widget.QuickExit(),
-                widget.Sep(linewidth=0, padding=5),
+                    background="#e5c07b",
+                    foreground="#282c34",
+                    format=' %a %B %d |  %H:%M',
+                    padding=12,
+                )
             ],
-            30,
+            35,
             background="#282c34"
         ),
     ),
