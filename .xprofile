@@ -1,5 +1,5 @@
 # Composer
-picom &
+picom --experimental-backends &
 # Set Keyboard Layout
 setxkbmap es &
 # Set Wallpaper
