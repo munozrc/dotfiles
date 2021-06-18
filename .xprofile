@@ -1,2 +1,4 @@
 # Set Keyboard Layout
 setxkbmap es &
+# Set Wallpaper
+~/.fehbg &

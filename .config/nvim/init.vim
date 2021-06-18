@@ -25,6 +25,9 @@ call plug#begin('~/.local/share/nvim/plugged')
 " Themes
 Plug 'joshdick/onedark.vim'
 
+" Visual
+Plug 'lilydjwg/colorizer'
+
 call plug#end()
 
 " Current Theme

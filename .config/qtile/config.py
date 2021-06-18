@@ -91,8 +91,8 @@ for i in groups:
     ])
 
 layouts = [
-    layout.Columns(border_focus_stack='#d75f5f'),
-    layout.Max(),
+    layout.MonadTall(border_focus_stack='#d75f5f', margin=8),
+    layout.Max(margin=8),
     # Try more layouts by unleashing below layouts.
     # layout.Stack(num_stacks=2),
     # layout.Bsp(),
@@ -107,7 +107,7 @@ layouts = [
 ]
 
 widget_defaults = dict(
-    font='Cascadia Code',
+    font='Hack Nerd Font',
     fontsize=14,
     padding=1,
 )
@@ -117,6 +117,7 @@ screens = [
     Screen(
         top=bar.Bar(
             [
+                widget.Sep(linewidth=0, padding=5),
                 widget.CurrentLayout(),
                 widget.GroupBox(),
                 widget.Prompt(),
@@ -127,12 +128,17 @@ screens = [
                     },
                     name_transform=lambda name: name.upper(),
                 ),
-                widget.TextBox("Press &lt;M-r&gt; to spawn", foreground="#d75f5f"),
                 widget.Systray(),
-                widget.Clock(format='%d/%m/%Y - %H:%M'),
+                widget.Clock(
+                    foreground="#e5c07b",
+                    format=' %a %B %d   %H:%M',
+                    padding=6
+                ),
                 widget.QuickExit(),
+                widget.Sep(linewidth=0, padding=5),
             ],
-            24,
+            30,
+            background="#282c34"
         ),
     ),
 ]
