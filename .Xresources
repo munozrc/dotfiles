@@ -8,7 +8,7 @@ Xft.hintstyle: hintfull
 Xft.lcdfilter: lcdfilter
 
 XTerm*renderFont: true
-XTerm*faceName: CaskaydiaCove Nerd Font 
+XTerm*faceName: Hack Nerd Font
 XTerm*faceSize: 11
 XTerm*utf8: 2
 XTerm*locale: true
