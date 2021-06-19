@@ -12,6 +12,7 @@ XTerm*faceName: Hack Nerd Font
 XTerm*faceSize: 11
 XTerm*utf8: 2
 XTerm*locale: true
+XTerm*internalBorder: 12
 
 XTerm*loginshell: true
 
