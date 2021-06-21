@@ -5,3 +5,9 @@
 	defaultBranch = main
 [credential]
 	helper = store
+[alias]
+	s = status
+	a = add
+	aa = add .
+	c = commit -m
+	l = log --graph --oneline --decorate=short
