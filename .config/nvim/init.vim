@@ -1,3 +1,6 @@
+" General Settings
+source $HOME/.config/nvim/general/plugins.vim
+
 syntax enable 
 
 set number
@@ -24,17 +27,6 @@ set termguicolors
 set colorcolumn=80
 
 highlight ColorColumn ctermbg=0 guibg=lightgrey
-
-call plug#begin('~/.local/share/nvim/plugged')
-" Themes
-Plug 'joshdick/onedark.vim'
-" Visual
-Plug 'lilydjwg/colorizer'
-" Functional
-Plug 'easymotion/vim-easymotion'
-Plug 'scrooloose/nerdtree'
-Plug 'christoomey/vim-tmux-navigator'
-call plug#end()
 
 " Current Theme
 colorscheme onedark
