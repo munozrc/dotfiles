@@ -1,5 +1,5 @@
 " General Settings
-source $HOME/.config/nvim/general/plugins.vim
+source $HOME/.config/nvim/plugins.vim
 
 syntax enable 
 
