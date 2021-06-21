@@ -123,7 +123,7 @@ screens = [
                     rounded=False,
                     borderwidth=1,
                     active="#ffffff",
-                    inactive="#aaaaaa",
+                    inactive="#ffffff",
                     highlight_method="block",
                     this_current_screen_border="#61afef",
                 ),
