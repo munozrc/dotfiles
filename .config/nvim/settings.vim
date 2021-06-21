@@ -1,0 +1,24 @@
+syntax enable 
+
+set number
+set relativenumber
+set mouse=a
+set numberwidth=1
+set clipboard=unnamedplus
+set showcmd
+set ruler
+set encoding=utf-8
+set showmatch
+set sw=2
+set laststatus
+set noerrorbells
+set expandtab
+set smartindent
+set rnu
+set nowrap
+set noswapfile
+set nobackup
+set incsearch
+set ignorecase
+set termguicolors
+set colorcolumn=80
