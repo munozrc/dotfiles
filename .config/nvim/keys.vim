@@ -1,4 +1,4 @@
-let mapleader=" "
+let mapleader=","
 
 " Map Keys
 nmap <Leader>s <Plug>(easymotion-s2)
