@@ -16,6 +16,12 @@ XTerm*internalBorder: 12
 
 XTerm*loginshell: true
 
+XTerm.vt100.translations: #override \n\
+  Ctrl <Key> j: smaller-vt-font() \n\
+  Ctrl <Key> k: larger-vt-font()
+
+XTerm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
+
 ! Dracula Xresources palette
 *.foreground: #F8F8F2
 *.background: #282A36

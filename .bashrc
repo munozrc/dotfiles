@@ -9,6 +9,7 @@
 alias vim="nvim"
 alias merge="xrdb -merge ~/.Xresources"
 alias ls="ls --color=auto"
+alias ll="ls -la"
 
 # NVM config
 export NVM_DIR="$HOME/.nvm"
