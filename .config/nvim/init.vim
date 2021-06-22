@@ -7,4 +7,4 @@ source $HOME/.config/nvim/keys.vim
 source $HOME/.config/nvim/plug-config/coc.vim
 
 " Current Theme
-colorscheme onedark
+source $HOME/.config/nvim/themes/onedark.vim
