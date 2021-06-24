@@ -12,7 +12,7 @@ from keys import mod, keys
 from groups import groups
 
 layouts = [
-    layout.MonadTall(border_focus="#e06c75", margin=12),
+    layout.MonadTall(border_focus="#e06c75", margin=20),
     layout.Max(),
 ]
 
@@ -54,7 +54,7 @@ screens = [
                 widget.Clock(
                     background="#e5c07b",
                     foreground="#282c34",
-                    format=' %a %B %d |  %H:%M',
+                    format='%a %d %B, %H:%M',
                     padding=12,
                 )
             ],
