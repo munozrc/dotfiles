@@ -49,8 +49,9 @@ screens = [
                 widget.Systray(
                     background="#61afef",
                     foreground="#282c34",
-                    padding=12,
+                    padding=10,
                 ),
+                widget.Sep(background="#61afef", linewidth=0, padding=10),
                 widget.Clock(
                     background="#e5c07b",
                     foreground="#282c34",
