@@ -12,7 +12,7 @@ from keys import mod, keys
 from groups import groups
 
 layouts = [
-    layout.MonadTall(border_focus="#e06c75", margin=20),
+    layout.MonadTall(border_focus="#61afef", margin=20),
     layout.Max(),
 ]
 
@@ -47,7 +47,7 @@ screens = [
                 ),
                 widget.WindowName(padding=10),
                 widget.Systray(
-                    background="#98c379",
+                    background="#61afef",
                     foreground="#282c34",
                     padding=12,
                 ),
