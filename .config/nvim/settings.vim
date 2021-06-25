@@ -55,3 +55,6 @@ set ignorecase
 
 " Displays the limit column to 80 characters
 set colorcolumn=80
+
+" Enable true colors in terminal
+set termguicolors
