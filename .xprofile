@@ -1,6 +1,14 @@
 # Composer
 picom --experimental-backends &
+
 # Set Keyboard Layout
 setxkbmap es &
+
 # Set Wallpaper
 ~/.fehbg &
+
+# Systray Network Manager
+nm-applet &
+
+# Systray Volume Control
+volumeicon &
