@@ -1,25 +1,57 @@
-syntax on 
+" Turn on syntax highlighting
+syntax on
 
-set number
-set relativenumber
+" Highlight the current line
+set cursorline
+
+" Show line number
+set number relativenumber
+
+" Enable line numbers
 set mouse=a
-set numberwidth=1
+
+" Enable clipboard system
 set clipboard=unnamedplus
+
+" Show the current command in the bottom right
 set showcmd
-set ruler
+
+" Set default encoding
 set encoding=utf-8
+
+" Show matching braces
 set showmatch
-set sw=2
-set laststatus=2
-set backspace=indent,eol,start
-set noerrorbells
+
+" 2-space indentation 
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set shiftround
 set expandtab
 set smartindent
-set rnu
+
+" Use filetype indentation
+filetype indent on
+
+" Allow plugins to use filetype indentation
+filetype plugin indent on
+
+" Always display the status line
+set laststatus=2
+
+" Wrap long lines
 set wrap
 set noswapfile
 set nobackup
+
+" Allow changing buffers without having to save them
+set hidden
+
+" Jump to the first occurrence of search while the user is still searching
 set incsearch
+
+" Ignore case on searches
 set ignorecase
-set termguicolors
+
+" Displays the limit column to 80 characters
 set colorcolumn=80
