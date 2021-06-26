@@ -4,11 +4,9 @@ from keys import mod, keys
 
 # Set config for each group
 groups = [
-    Group("I"),
-    Group("II"),
-    Group("III"),
-    Group("IV"),
-    Group("V"),
+    Group("⏽"),
+    Group("⏽⏽"),
+    Group("⏽⏽⏽"),
 ]
 
 for i, group in enumerate(groups):

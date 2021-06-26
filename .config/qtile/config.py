@@ -27,17 +27,16 @@ screens = [
     Screen(
         top=bar.Bar(
             [
-                widget.CurrentLayoutIcon(
-                    background="#aaaaaa",
-                    scale=0.45,
-                ),
+                widget.CurrentLayoutIcon(scale=0.4, background="#61afef"),
+                widget.Sep(linewidth=0, padding=10),
                 widget.GroupBox(
-                    padding_x=12,
+                    padding_x=8,
+                    fontsize=16,
                     rounded=False,
                     active="#ffffff",
                     inactive="#abb2bf",
                     highlight_method="text",
-                    this_current_screen_border="#e5c07b"
+                    this_current_screen_border="#61afef"
                 ),
                 widget.Spacer(),
                 widget.Systray(padding=10),
