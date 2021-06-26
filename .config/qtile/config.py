@@ -17,9 +17,9 @@ layouts = [
 ]
 
 widget_defaults = dict(
-    font='Hack Nerd Font',
+    font="Hack Nerd Font",
     fontsize=14,
-    padding=1,
+    padding=0,
 )
 extension_defaults = widget_defaults.copy()
 
@@ -30,32 +30,20 @@ screens = [
                 widget.CurrentLayoutIcon(
                     background="#aaaaaa",
                     scale=0.45,
-                    padding=0,
                 ),
                 widget.GroupBox(
-                    background="#282c34",
-                    margin_y=3,
-                    margin_x=0,
-                    padding_y=10,
                     padding_x=12,
                     rounded=False,
-                    borderwidth=1,
                     active="#ffffff",
-                    inactive="#ffffff",
-                    highlight_method="block",
-                    this_current_screen_border="#61afef",
+                    inactive="#abb2bf",
+                    highlight_method="text",
+                    this_current_screen_border="#e5c07b"
                 ),
-                widget.WindowName(padding=10),
-                widget.Systray(
-                    background="#61afef",
-                    foreground="#282c34",
-                    padding=10,
-                ),
-                widget.Sep(background="#61afef", linewidth=0, padding=10),
+                widget.Spacer(),
+                widget.Systray(padding=10),
                 widget.Clock(
-                    background="#e5c07b",
-                    foreground="#282c34",
-                    format='%a %d %B, %H:%M',
+                    foreground="#ffffff",
+                    format="%a %d %B, %H:%M",
                     padding=12,
                 )
             ],
