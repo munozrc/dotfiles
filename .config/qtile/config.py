@@ -3,14 +3,13 @@ import subprocess
 
 from typing import List  # noqa: F401
 
-from libqtile import bar, layout, widget, hook
-from libqtile.config import Click, Drag, Group, Key, Match, Screen
-from libqtile.lazy import lazy
-from libqtile.utils import guess_terminal
+from libqtile import bar, widget, hook
+from libqtile.config import Key, Match, Screen
 
 from keys import mod, keys
 from layouts import layouts, floating_layout
 from groups import groups
+from mouse import mouse
 
 widget_defaults = dict(
     font="Hack Nerd Font",
@@ -46,15 +45,6 @@ screens = [
             background="#282c34"
         ),
     ),
-]
-
-# Drag floating layouts.
-mouse = [
-    Drag([mod], "Button1", lazy.window.set_position_floating(),
-         start=lazy.window.get_position()),
-    Drag([mod], "Button3", lazy.window.set_size_floating(),
-         start=lazy.window.get_size()),
-    Click([mod], "Button2", lazy.window.bring_to_front())
 ]
 
 dgroups_key_binder = None
