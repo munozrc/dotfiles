@@ -11,6 +11,12 @@ alias merge="xrdb -merge ~/.Xresources"
 alias ls="ls --color=auto"
 alias ll="ls -la"
 
+# Aliases Git
+alias gst="git status"
+alias ga="git add"
+alias gc="git commit -m"
+alias gp="git push"
+
 # NVM config
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
