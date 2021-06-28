@@ -34,7 +34,7 @@ screens = [
                     this_current_screen_border="#61afef"
                 ),
                 widget.Spacer(),
-                widget.Systray(padding=10),
+                widget.Systray(padding=10, icon_size=14),
                 widget.Clock(
                     foreground="#ffffff",
                     format="%a %d %B, %H:%M",
