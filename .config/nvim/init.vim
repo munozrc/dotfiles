@@ -5,6 +5,7 @@ source $HOME/.config/nvim/keys.vim
 
 " Plug configs
 source $HOME/.config/nvim/plug-config/coc.vim
+source $HOME/.config/nvim/themes/airline.vim
 
 " Current Theme
 source $HOME/.config/nvim/themes/onedark.vim

@@ -14,19 +14,13 @@ set mouse=a
 set clipboard=unnamedplus
 
 " Show the current command in the bottom right
-set showcmd
+"set showcmd
 
 " Set default encoding
 set encoding=utf-8
 
-" Show matching braces
-set showmatch
-
 " 2-space indentation 
-set tabstop=2
 set shiftwidth=2
-set softtabstop=2
-set shiftround
 set expandtab
 set smartindent
 
