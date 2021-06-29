@@ -1,7 +1,3 @@
-#
-# ~/.bashrc
-#
-
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
@@ -12,10 +8,13 @@ alias ls="ls --color=auto"
 alias ll="ls -la"
 
 # Aliases Git
-alias gst="git status"
+alias gs="git status"
 alias ga="git add"
+alias gaa="git add ."
 alias gc="git commit -m"
 alias gp="git push"
+alias gd="git diff"
+alias gr="git restore"
 
 # NVM config
 export NVM_DIR="$HOME/.nvm"
