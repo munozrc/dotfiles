@@ -6,6 +6,7 @@ nmap <Leader>s <Plug>(easymotion-s2)
 
 " Open file system explorer
 nmap <Leader>n :NERDTreeFind<CR>
+let NERDTreeQuitOnOpen=1
 
 " Alternate way to save
 nnoremap <C-s> :w<CR>
