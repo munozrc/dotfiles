@@ -3,9 +3,10 @@
     "css",
     "markdown",
     "javascript",
+    "typescriptreact",
     "graphql",
     "html",
     "yaml",
     "json"
-  ],
+  ]
 }
