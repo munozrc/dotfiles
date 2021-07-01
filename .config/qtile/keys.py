@@ -44,6 +44,6 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     ([mod, "shift"], "m", lazy.spawn("rofi -show")), # Window Nav
     ([mod], "b", lazy.spawn("google-chrome-stable")), # Browser
     ([mod], "e", lazy.spawn("pcmanfm")), # File Explorer
-    ([mod], "Return", lazy.spawn("xterm")), # Terminal
+    ([mod], "Return", lazy.spawn("alacritty")), # Terminal
 
 ]]
