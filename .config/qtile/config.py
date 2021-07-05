@@ -12,7 +12,7 @@ from groups import groups
 from mouse import mouse
 
 widget_defaults = dict(
-    font="Hack Nerd Font",
+    font="sans",
     fontsize=14,
     padding=0,
 )
