@@ -28,6 +28,8 @@ Plug 'pangloss/vim-javascript'		" Syntax for js
 Plug 'leafgarland/typescript-vim'	" Syntax for ts
 Plug 'peitalin/vim-jsx-typescript'	" Syntax for tsx
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 " Mapping Keys
@@ -46,3 +48,7 @@ nmap <Leader>n :NERDTreeToggle<CR>	" Open file explorer
 " Set Current Theme
 colorscheme gruvbox
 set background=dark
+
+" Airline Config
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
