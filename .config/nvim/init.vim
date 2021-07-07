@@ -30,6 +30,7 @@ Plug 'peitalin/vim-jsx-typescript'	" Syntax for tsx
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'lilydjwg/colorizer'
 call plug#end()
 
 " Mapping Keys
