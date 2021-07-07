@@ -31,10 +31,10 @@ colors:
 
 font:
   bold:
-    family: Hack Nerd Font
+    family: Cascadia Code 
   italic:
-    family: Hack Nerd Font
+    family: Cascadia Code
   normal:
-    family: Hack Nerd Font
+    family: Cascadia Code 
     style: Regular
   size: 11
