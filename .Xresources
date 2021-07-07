@@ -1,8 +1,8 @@
 Xcursor.theme: default 
 
-XTerm*termName: xterm256color
+XTerm*termName: xterm-256color
 XTerm*renderFont: true
-XTerm*faceName: Hack Nerd Font
+XTerm*faceName: xft:Hack Nerd Font
 XTerm*faceSize: 11
 XTerm*utf8: 2
 XTerm*locale: true

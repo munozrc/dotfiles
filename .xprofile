@@ -1,5 +1,5 @@
 # Composer
-#picom --experimental-backends &
+picom --experimental-backends &
 
 # Set Keyboard Layout
 setxkbmap es &
