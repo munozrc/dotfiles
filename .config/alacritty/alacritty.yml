@@ -31,10 +31,10 @@ colors:
 
 font:
   bold:
-    family: Cascadia Code 
+    family: FiraCode Nerd Font 
   italic:
-    family: Cascadia Code
+    family: FiraCode Nerd Font
   normal:
-    family: Cascadia Code 
+    family: FiraCode Nerd Font 
     style: Regular
   size: 11
