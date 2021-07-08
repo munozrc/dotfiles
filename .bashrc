@@ -4,7 +4,7 @@
 # Aliases
 alias merge="xrdb -merge ~/.Xresources"
 alias ls="ls --color=auto"
-alias ll="ls -la"
+alias ll="ls -lah"
 
 # Aliases Git
 alias gs="git status"
