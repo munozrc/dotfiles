@@ -5,6 +5,8 @@
 alias merge="xrdb -merge ~/.Xresources"
 alias ls="ls --color=auto"
 alias ll="ls -lah"
+alias cdd="cd ~/Repos/dotfiles/"
+alias cdr="cd ~/Repos/"
 
 # Aliases Git
 alias gs="git status"
