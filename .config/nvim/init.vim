@@ -1,6 +1,5 @@
 " General Settings
 syntax on			" Turn on syntax highlighting
-set nocompatible		" No compatible with vi
 set cursorline 			" Highlight the current line
 set number 			" Show line numbers
 set rnu 			" Set relative positions from current line
@@ -22,7 +21,8 @@ let g:python3_host_prog = expand("/usr/bin/python")
 
 " Load Plugins
 call plug#begin("~/.config/nvim/plugged")
-Plug 'morhetz/gruvbox'			" Theme Gruvbox
+Plug 'morhetz/gruvbox'			" Theme Gruvbox bg=dark/light
+Plug 'joshdick/onedark.vim'		" Theme Onedark 
 Plug 'scrooloose/nerdtree'		" File explorer
 Plug 'pangloss/vim-javascript'		" Syntax for js
 Plug 'leafgarland/typescript-vim'	" Syntax for ts
@@ -47,8 +47,7 @@ nnoremap <Leader>q :bd<CR> 	" Delete to current buffer
 nmap <Leader>n :NERDTreeToggle<CR>	" Open file explorer
 
 " Set Current Theme
-colorscheme gruvbox
-set background=dark
+colorscheme onedark 
 
 " Airline Config
 let g:airline#extensions#tabline#enabled = 1

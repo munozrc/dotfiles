@@ -21,4 +21,4 @@ UXTerm*faceName: Hack Nerd Font
 UXTerm*faceSize: 11
 
 ! Current theme 
-#include ".Xresources.d/gruvbox-theme"
+#include ".Xresources.d/onedark-theme"
