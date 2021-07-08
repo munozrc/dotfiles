@@ -85,7 +85,7 @@ layouts = [
 
 widget_defaults = dict(
     font='sans',
-    fontsize=12,
+    fontsize=14,
     padding=0,
 )
 extension_defaults = widget_defaults.copy()
@@ -93,6 +93,7 @@ screens = [
     Screen(
         top=bar.Bar(
             [
+                widget.CurrentLayoutIcon(scale=0.4, background="#61afef"),
                 widget.Sep(linewidth=0, padding=14),
                 widget.GroupBox(
                     borderwidth=0,
@@ -108,12 +109,11 @@ screens = [
                 widget.Clock(
                     foreground="#c8ccd4",
                     format="%a %d %B, %H:%M",
-                    padding=12,
                 ),
                 widget.Spacer(),
-                widget.Systray(padding=10, icon_size=14),
-                widget.Sep(linewidth=0, padding=12),
-                widget.CurrentLayoutIcon(scale=0.4, background="#61afef"),
+                widget.Sep(linewidth=0, padding=6, background="#61afef"),
+                widget.Systray(padding=10, icon_size=14, background="#61afef"),
+                widget.Sep(linewidth=0, padding=12, background="#61afef"),
             ],
             36,
             background="#282c34"
