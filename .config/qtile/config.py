@@ -84,7 +84,7 @@ layouts = [
 ]
 
 widget_defaults = dict(
-    font='sans',
+    font='Segoe UI Semibold',
     fontsize=14,
     padding=0,
 )
