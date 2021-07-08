@@ -8,7 +8,7 @@ setxkbmap es &
 nitrogen --restore &
 
 # Systray Network Manager
-#nm-applet &
+nm-applet &
 
 # Systray Volume Control
-#volumeicon &
+volumeicon &
