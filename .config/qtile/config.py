@@ -34,10 +34,6 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     # Kill current window
     ([mod], "w", lazy.window.kill()),
 
-    # Switch focus of monitors
-    # ([mod], "period", lazy.next_screen()),
-    # ([mod], "comma", lazy.prev_screen()),
-
     # Restart qtile
     ([mod, "control"], "r", lazy.restart()),
 
@@ -54,9 +50,11 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
 ]]
 
 groups = [
-    Group("⏽"),
-    Group("⏽⏽"),
-    Group("⏽⏽⏽"),
+    Group(name="1", label=""), # icon = nf-fa-circle
+    Group(name="2", label=""),
+    Group(name="3", label=""),
+    Group(name="4", label=""),
+    Group(name="5", label=""),
 ]
 
 for i, group in enumerate(groups):
@@ -95,12 +93,13 @@ screens = [
     Screen(
         top=bar.Bar(
             [
-                widget.Sep(linewidth=0, padding=6),
+                widget.Sep(linewidth=0, padding=14),
                 widget.GroupBox(
-                    padding_x=6,
-                    fontsize=16,
+                    borderwidth=0,
+                    spacing=14,
+                    fontsize=26,
                     rounded=False,
-                    active="#d19a66",
+                    active="#e06c75",
                     inactive="#c8ccd4",
                     highlight_method="text",
                     this_current_screen_border="#61afef"
@@ -116,7 +115,7 @@ screens = [
                 widget.Sep(linewidth=0, padding=12),
                 widget.CurrentLayoutIcon(scale=0.4, background="#61afef"),
             ],
-            32,
+            36,
             background="#282c34"
         ),
     ),
