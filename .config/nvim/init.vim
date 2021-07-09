@@ -11,7 +11,9 @@ set laststatus=2 		" Always display the status line
 set hidden			" Allow changing buffers without having to save them
 set termguicolors		" Enabke true colors in terminal
 set nobackup			" Disable backup files
+set nowritebackup		" Disable backup files
 set noswapfile			" Disable temp files
+set nowrap			" Do not split the line if it is very long
 
 " Set Servers
 let g:loaded_python_provider = 0
@@ -21,12 +23,13 @@ let g:python3_host_prog = expand("/usr/bin/python")
 
 " Load Plugins
 call plug#begin("~/.config/nvim/plugged")
-Plug 'morhetz/gruvbox'			" Theme Gruvbox bg=dark/light
-Plug 'joshdick/onedark.vim'		" Theme Onedark 
-Plug 'scrooloose/nerdtree'		" File explorer
-Plug 'pangloss/vim-javascript'		" Syntax for js
-Plug 'leafgarland/typescript-vim'	" Syntax for ts
-Plug 'peitalin/vim-jsx-typescript'	" Syntax for tsx
+Plug 'morhetz/gruvbox'				" Theme Gruvbox bg=dark/light
+Plug 'joshdick/onedark.vim'			" Theme Onedark 
+Plug 'scrooloose/nerdtree'			" File explorer
+Plug 'neoclide/coc.nvim', {'branch': 'release'}	" Intellisense
+Plug 'pangloss/vim-javascript'			" Syntax for js
+Plug 'leafgarland/typescript-vim'		" Syntax for ts
+Plug 'peitalin/vim-jsx-typescript'		" Syntax for tsx
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -52,3 +55,15 @@ colorscheme onedark
 " Airline Config
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
+
+" Coc Config
+let g:coc_global_extensions = ["coc-tsserver", "coc-pyright","coc-json", "coc-html", "coc-css", "coc-prettier"]
+" Use tab for trigger completion with characters ahead and navigate.
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+" Make <CR> auto-select the first completion item and notify coc.nvim to
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
+                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
