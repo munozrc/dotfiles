@@ -41,8 +41,8 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     ([mod, "control"], "q", lazy.shutdown()),
 
     #Applications
-    ([mod], "m", lazy.spawn("rofi -show run")), # Menu
-    ([mod, "shift"], "m", lazy.spawn("rofi -show")), # Window Nav
+    ([mod], "m", lazy.spawn("rofi -show drun")), # Menu
+    ([mod, "shift"], "m", lazy.spawn("rofi -show window")), # Window Nav
     ([mod], "b", lazy.spawn("google-chrome-stable")), # Launch google chrome
     ([mod], "e", lazy.spawn("pcmanfm")), # Launch file explorer
     ([mod], "Return", lazy.spawn(terminal)), # Launch terminal
