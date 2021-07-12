@@ -5,6 +5,7 @@
 alias merge="xrdb -merge ~/.Xresources"
 alias ls="ls --color=auto"
 alias ll="ls -lah"
+alias sp="sudo pacman"
 alias cdd="cd ~/Repos/dotfiles/"
 alias cdr="cd ~/Repos/"
 
