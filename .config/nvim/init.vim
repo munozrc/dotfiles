@@ -14,10 +14,11 @@ let g:python3_host_prog = expand("/usr/bin/python")
 call plug#begin("~/.config/nvim/plugged")
 
 " ::: Looks and GUI stuff
-Plug 'morhetz/gruvbox'			" Theme Gruvbox bg=dark/light
-Plug 'joshdick/onedark.vim'		" Theme Onedark 
-Plug 'vim-airline/vim-airline' 		" Airline status bar 
-Plug 'vim-airline/vim-airline-themes' 	" Add support theme airline
+Plug 'morhetz/gruvbox'			        " Theme Gruvbox bg=dark/light
+Plug 'joshdick/onedark.vim'		        " Theme Onedark 
+Plug 'vim-airline/vim-airline' 		        " Airline status bar 
+Plug 'vim-airline/vim-airline-themes' 	        " Add support theme airline
+Plug 'lukas-reineke/indent-blankline.nvim'      " Indentation guides
 
 " ::: Functionalities
 Plug 'scrooloose/nerdtree'				" File explorer
