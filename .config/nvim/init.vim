@@ -107,7 +107,7 @@ let g:closetag_shortcut = '>'
 " Show top status bar
 let g:airline#extensions#tabline#enabled = 1
 " Eneble use symbols fonts
-let g:airline_powerline_fonts = 0 
+let g:airline_powerline_fonts = 1
 
 " ::: {{ Coc Config }}
 " Install extensions by Coc

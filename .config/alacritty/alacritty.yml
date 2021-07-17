@@ -1,4 +1,4 @@
-background_opacity: 0.9
+background_opacity: 1
 
 # Colors (Dracula)
 colors:
@@ -31,10 +31,10 @@ colors:
 
 font:
   bold:
-    family: FiraCode Nerd Font 
+    family: Hack Nerd Font
   italic:
-    family: FiraCode Nerd Font
+    family: Hack Nerd Font
   normal:
-    family: FiraCode Nerd Font 
+    family: Hack Nerd Font
     style: Regular
   size: 11
