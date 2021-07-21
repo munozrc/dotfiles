@@ -17,6 +17,7 @@ alias gc="git commit -m"
 alias gp="git push"
 alias gd="git diff"
 alias gr="git restore"
+alias gl="git log --graph --oneline --decorate=short"
 
 # NVM config
 export NVM_DIR="$HOME/.nvm"
