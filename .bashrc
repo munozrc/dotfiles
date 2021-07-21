@@ -2,6 +2,9 @@
 [[ $- != *i* ]] && return
 
 # Aliases
+alias .="cd .."
+alias ..="cd ../.."
+alias ...="cd ../../.."
 alias merge="xrdb -merge ~/.Xresources"
 alias ls="ls --color=auto"
 alias ll="ls -lah"
