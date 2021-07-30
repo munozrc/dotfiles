@@ -31,6 +31,7 @@ Plug 'tpope/vim-commentary'                             " Comment stuff out
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'leafgarland/typescript-vim'
+Plug 'ianks/vim-tsx'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 
 call plug#end()
