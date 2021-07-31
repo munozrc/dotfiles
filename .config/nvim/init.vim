@@ -29,9 +29,8 @@ Plug 'tpope/vim-commentary'                             " Comment stuff out
 
 " ::: Syntax Support
 Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
 Plug 'leafgarland/typescript-vim'
-Plug 'ianks/vim-tsx'
+Plug 'peitalin/vim-jsx-typescript'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 
 call plug#end()
@@ -57,6 +56,7 @@ set noswapfile			" Disable temp files
 set nowrap			" Do not split the line if it is very long
 set expandtab
 set smarttab
+filetype plugin indent on
 
 " ======================================== "
 " ==========::: Mapping Keys :::========== "
@@ -157,3 +157,6 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+
+" set filetypes as typescriptreact
+autocmd BufNewFile,BufRead *.ts,*.tsx,*.js,*.jsx set filetype=typescriptreact
