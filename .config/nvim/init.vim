@@ -159,4 +159,4 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
 " set filetypes as typescriptreact
-autocmd BufNewFile,BufRead *.ts,*.tsx,*.js,*.jsx set filetype=typescriptreact
+autocmd BufNewFile,BufRead *.tsx,*.js,*.jsx set filetype=typescriptreact
