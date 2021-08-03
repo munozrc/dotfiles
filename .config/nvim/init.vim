@@ -26,6 +26,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}		" Intellisense
 Plug 'lilydjwg/colorizer' 				" Show colors in noevim
 Plug 'alvan/vim-closetag'                               " Auto close tag elements
 Plug 'tpope/vim-commentary'                             " Comment stuff out
+Plug 'mhinz/vim-signify'                                " Git integration
+Plug 'jiangmiao/auto-pairs'
 
 " ::: Syntax Support
 Plug 'pangloss/vim-javascript'
@@ -97,6 +99,8 @@ colorscheme onedark
 " ::: {{ NerdTree }}
 " Open and Close NerdTree file explorer
 nmap <Leader>n :NERDTreeToggle<CR>
+" Automatically close NERDTreeToggle
+let NERDTreeQuitOnOpen=1
 
 " ::: {{ Vim-Closetag }}
 " These are the file extensions where this plugin is enabled.
