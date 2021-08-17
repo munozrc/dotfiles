@@ -65,7 +65,7 @@ for i, group in enumerate(groups):
 layout_config = {
     "border_focus": "#61afef",
     "border_width": 1,
-    "margin": 20
+    "margin": 16 
 }
 
 layouts = [
@@ -84,7 +84,7 @@ layouts = [
 
 widget_defaults = dict(
     font="sans",
-    fontsize=14,
+    fontsize=12,
     padding=0,
 )
 extension_defaults = widget_defaults.copy()
@@ -92,12 +92,12 @@ screens = [
     Screen(
         top=bar.Bar(
             [
-                widget.CurrentLayoutIcon(scale=0.4, background="#61afef"),
+                widget.CurrentLayoutIcon(scale=0.6, background="#61afef"),
                 widget.Sep(linewidth=0, padding=14),
                 widget.GroupBox(
                     borderwidth=0,
                     spacing=14,
-                    fontsize=26,
+                    fontsize=24,
                     rounded=False,
                     active="#e06c75",
                     inactive="#c8ccd4",
@@ -110,11 +110,10 @@ screens = [
                     format="%a %d %B, %H:%M",
                 ),
                 widget.Spacer(),
-                widget.Sep(linewidth=0, padding=6, background="#61afef"),
-                widget.Systray(padding=10, icon_size=14, background="#61afef"),
-                widget.Sep(linewidth=0, padding=12, background="#61afef"),
+                widget.Systray(padding=10, icon_size=14),
+                widget.Sep(linewidth=0, padding=12),
             ],
-            36,
+            30,
             background="#282c34"
         ),
     ),
