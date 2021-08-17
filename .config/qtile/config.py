@@ -46,6 +46,10 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     ([mod], "e", lazy.spawn("pcmanfm")), # Launch file explorer
     ([mod], "Return", lazy.spawn(terminal)), # Launch terminal
 
+    # Brightness
+    ([], "XF86MonBrightnessUp", lazy.spawn("brightnessctl set +10%")),
+    ([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 10%-")),
+
 ]]
 
 groups = [
