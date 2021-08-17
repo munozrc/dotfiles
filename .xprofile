@@ -2,13 +2,19 @@
 picom --experimental-backends &
 
 # Set Keyboard Layout
-setxkbmap es &
+setxkbmap latam &
 
 # Set Wallpaper
-nitrogen --restore &
+~/.fehbg &
 
 # Systray Network Manager
 nm-applet &
 
+# Systray Bluetooth
+blueman-applet &
+
 # Systray Volume Control
 volumeicon &
+
+# Systray Volume Control
+cbatticon &

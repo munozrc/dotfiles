@@ -5,7 +5,7 @@ from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
 
 mod = "mod4"
-terminal = "xterm" #guess_terminal()
+terminal = "alacritty" #guess_terminal()
 
 keys = [Key(key[0], key[1], *key[2:]) for key in [
 
@@ -83,7 +83,7 @@ layouts = [
 ]
 
 widget_defaults = dict(
-    font='Segoe UI Semibold',
+    font="sans",
     fontsize=14,
     padding=0,
 )
