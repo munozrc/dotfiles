@@ -2,7 +2,7 @@
 
 XTerm*termName: xterm-256color
 XTerm*renderFont: true
-XTerm*faceName: xft:Hack Nerd Font
+XTerm*faceName: xft:Hack Nerd Font Mono
 XTerm*faceSize: 11
 XTerm*utf8: 2
 XTerm*locale: true
@@ -17,5 +17,5 @@ XTerm*vt100.translations: #override \n\
 XTerm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
 
 UXTerm*renderFont: true
-UXTerm*faceName: Hack Nerd Font
+UXTerm*faceName: Hack Nerd Font Mono
 UXTerm*faceSize: 11
