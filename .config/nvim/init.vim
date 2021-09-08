@@ -122,7 +122,7 @@ let g:coc_global_extensions = [
 	\"coc-json",
 	\"coc-html",
 	\"coc-css",
-	\"coc-prettier",
+	\"coc-eslint",
 	\]
 
 " Use tab for trigger completion with characters ahead and navigate.
