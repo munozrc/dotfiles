@@ -31,6 +31,10 @@ mkswapon
 ```
 
 ```bash
+lsblk
+```
+
+```bash
 mount /dev/sda2 /mnt
 ```
 
