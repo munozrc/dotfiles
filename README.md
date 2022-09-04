@@ -78,7 +78,7 @@ useradd -m nombre-usuario
 passwd nombre-usuario
 ```
 
-Añadir usuario nuevo al grupo `wheel`, asi al ejecutar el comando `sudo su` nos permitiría convertinos directamente al usuario `root`
+Añadir usuario nuevo al grupo `wheel`, asi al ejecutar el comando `sudo su` nos permitiría convertirnos directamente al usuario `root`
 
 ```bash
 usermod -aG wheel nombre-usuario
@@ -137,6 +137,7 @@ echo nombre-maquina > /etc/hostname
 Creamos un nuevo `initramfs`
 ```bash
 mkinitcpio -P
+```
 
 Creamos el archivos `hots`
 
