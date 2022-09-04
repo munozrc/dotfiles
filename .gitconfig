@@ -1,7 +1,0 @@
-[user]
-	name = Carlos Muñoz
-	email = munozrengifocarlos@gmail.com
-[init]
-	defaultBranch = main
-[credential]
-	helper = store
