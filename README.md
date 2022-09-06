@@ -182,3 +182,31 @@ Reiniciamos la máquina.
 ```bash
 reboot now
 ```
+
+## Instalación de Repositorios de BlackArch
+
+Nos permitira instalar herramientas de ethical hacking. para ellos nos situamos en el directorio de **Downloads**.
+
+```bash
+cd ~/Downloads
+```
+
+```bash
+curl -O https://blackarch.org/strap.sh
+```
+
+Asignamos permisos de ejecución.
+
+```bash
+chmod +x strap.sh
+```
+
+Nos convertimos en root y ejecutamos el script.
+
+```bash
+sudo su
+```
+
+```bash
+./strap.sh
+```
