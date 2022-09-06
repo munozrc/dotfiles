@@ -1,10 +1,14 @@
 # Dotfiles
 
-### Instalación ArchLinux
+## Instalación ArchLinux
+
+Paso inicial cambiamos el layout del teclado.
 
 ```bash
 loadkeys la-latin1
 ```
+
+Ejecutamos el siguiente comando para particionar nuestro disco de almacenamiento.
 
 ```bash
 cfdisk
@@ -161,13 +165,19 @@ systemctl start NetworkManager.service
 systemctl enable NetworkManager
 ```
 
+Paso siguiente salir de nuestro sistemas hacia el instalador de **Arch Linux**
+
 ```bash
 exit
 ```
 
+Desmontamos todas las particiones de nuestro sistema.
+
 ```bash
 umount -R /mnt
 ```
+
+Reiniciamos la máquina.
 
 ```bash
 reboot now
