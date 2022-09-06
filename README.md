@@ -185,11 +185,7 @@ reboot now
 
 ## Instalación de Repositorios de BlackArch
 
-Nos permitira instalar herramientas de ethical hacking. para ellos nos situamos en el directorio de **Downloads**.
-
-```bash
-cd ~/Downloads
-```
+Nos permitira instalar herramientas de ethical hacking. para ellos nos situamos en el directorio de actual para descargar el script.
 
 ```bash
 curl -O https://blackarch.org/strap.sh
