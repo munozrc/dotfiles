@@ -51,7 +51,7 @@ mount /dev/sda1 /mnt/boot
 ```
 
 ```bash
-pacstrap /mnt linux linux-firmware networkmanager grub base base-devel git nvim nano
+pacstrap /mnt linux linux-firmware networkmanager grub base base-devel git neovim nano
 ```
 
 ```bash
