@@ -111,7 +111,7 @@ locale-gen
 ```
 
 ```bash
-touch /etc/vconsole.conf >> "KEYMAP=la-latin1"
+echo "KEYMAP=la-latin1" > /etc/vconsole.conf 
 ```
 
 ```bash
