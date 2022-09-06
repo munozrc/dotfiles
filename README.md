@@ -31,7 +31,7 @@ mkswap /dev/sda3
 ```
 
 ```bash
-mkswapon
+swapon
 ```
 
 ```bash
