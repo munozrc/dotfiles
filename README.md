@@ -146,7 +146,7 @@ mkinitcpio -P
 Creamos el archivos `hots`
 
 ```bash
-nano /etc/hots
+nano /etc/hosts
 ```
 
 ```bash
