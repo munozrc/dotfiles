@@ -206,3 +206,20 @@ sudo su
 ```bash
 ./strap.sh
 ```
+
+## Habilitar vmtools
+
+```bash
+sudo pacman -Syu
+```
+
+```bash
+sudo pacman -S open-vm-tools
+```
+
+```bash
+sudo systemctl enable vmtoolsd.service
+```
+```bash
+sudo systemctl enable vmware-vmblock-fuse.service
+```
