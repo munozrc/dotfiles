@@ -223,3 +223,13 @@ sudo systemctl enable vmtoolsd.service
 ```bash
 sudo systemctl enable vmware-vmblock-fuse.service
 ```
+
+## Instalación X11
+
+```bash
+pacman -S xorg-server xorg-xinit xorg-apps
+```
+
+```bash
+pacman -S xf86-video-vesa
+```
