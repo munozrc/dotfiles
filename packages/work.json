@@ -1,0 +1,33 @@
+{
+  "$schema": "https://aka.ms/winget-packages.schema.2.0.json",
+  "CreationDate": "2026-10-27T16:04:20.525-00:00",
+  "Sources": [
+    {
+      "Packages": [
+        { "PackageIdentifier": "7zip.7zip" },
+        { "PackageIdentifier": "JetBrains.DataGrip" },
+        { "PackageIdentifier": "Git.Git" },
+        { "PackageIdentifier": "VideoLAN.VLC" },
+        { "PackageIdentifier": "GitHub.cli" },
+        { "PackageIdentifier": "KeePassXCTeam.KeePassXC" },
+        { "PackageIdentifier": "Amazon.AWSCLI" },
+        { "PackageIdentifier": "Google.Chrome" },
+        { "PackageIdentifier": "Microsoft.VisualStudioCode" },
+        { "PackageIdentifier": "Amazon.AWSVPNClient" },
+        { "PackageIdentifier": "OBSProject.OBSStudio" },
+        { "PackageIdentifier": "Figma.Figma" },
+        { "PackageIdentifier": "Figma.FigmaAgent" },
+        { "PackageIdentifier": "Warp.Warp" },
+        { "PackageIdentifier": "SlackTechnologies.Slack" },
+        { "PackageIdentifier": "AuthorSoftware.NVMWindows" }
+      ],
+      "SourceDetails": {
+        "Argument": "https://cdn.winget.microsoft.com/cache",
+        "Identifier": "Microsoft.Winget.Source_8wekyb3d8bbwe",
+        "Name": "winget",
+        "Type": "Microsoft.PreIndexed.Package"
+      }
+    }
+  ],
+  "WinGetVersion": "1.29.380"
+}

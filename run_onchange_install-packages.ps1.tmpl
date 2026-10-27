@@ -1,0 +1,2 @@
+# hash: {{ include "packages/dev.json" | sha256sum }}
+winget import -i "{{ .chezmoi.sourceDir }}/packages/work.json" --accept-package-agreements --accept-source-agreements --ignore-unavailable

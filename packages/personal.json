@@ -1,0 +1,24 @@
+{
+  "$schema": "https://aka.ms/winget-packages.schema.2.0.json",
+  "CreationDate": "2026-10-27T16:04:20.525-00:00",
+  "Sources": [
+    {
+      "Packages": [
+        { "PackageIdentifier": "7zip.7zip" },
+        { "PackageIdentifier": "KeePassXCTeam.KeePassXC" },
+        { "PackageIdentifier": "Google.Chrome" },
+        { "PackageIdentifier": "OBSProject.OBSStudio" },
+        { "PackageIdentifier": "Discord.Discord" },
+        { "PackageIdentifier": "Valve.Steam" },
+        { "PackageIdentifier": "EpicGames.EpicGamesLauncher" }
+      ],
+      "SourceDetails": {
+        "Argument": "https://cdn.winget.microsoft.com/cache",
+        "Identifier": "Microsoft.Winget.Source_8wekyb3d8bbwe",
+        "Name": "winget",
+        "Type": "Microsoft.PreIndexed.Package"
+      }
+    }
+  ],
+  "WinGetVersion": "1.29.380"
+}
