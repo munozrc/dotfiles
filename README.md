@@ -25,11 +25,12 @@ El archivo `.chezmoi.toml.tmpl` genera la configuración de chezmoi con el `sour
     chezmoi re-add           # traer al repo cambios hechos directo en el archivo real
     chezmoi cd               # entrar al repo para commit y push
 
-## Notas
-
-Repo público: no se guardan tokens, claves ni credenciales.
-
 ## Pasos manuales
+
 - Abrir KeePassXC y activar el agente SSH (OpenSSH for Windows).
 - Extraer las `.pub` de cada entrada a `~\.ssh\`.
 - Verificar con `ssh-add -l` y `ssh -T git@github.com-personal`.
+
+## Notas
+
+Repo público: no se guardan tokens, claves ni credenciales.
