@@ -1,0 +1,10 @@
+# ~/.bashrc: executed by bash(1) for non-login shells.
+alias gdel='git push origin --delete'
+alias gbd='git branch -D'
+
+# Alias para usar Claude Code con distintas cuentas sin perder la sesión.
+# clp = personal (~/.claude-personal), clw = trabajo (~/.claude-work).
+# 'command' evita que bash confunda esto con otro alias llamado 'claude'.
+clp() { CLAUDE_CONFIG_DIR="$HOME/.claude-personal" command claude "$@"; }
+clw() { CLAUDE_CONFIG_DIR="$HOME/.claude-work" command claude "$@"; }
+
