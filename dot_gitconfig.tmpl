@@ -1,0 +1,22 @@
+[core]
+{{- if eq .chezmoi.os "windows" }}
+	autocrlf = true
+	longpaths = true
+{{- else }}
+	autocrlf = input
+{{- end }}
+
+[gpg]
+	format = ssh
+{{ if eq .chezmoi.os "windows" }}
+[gpg "ssh"]
+	program = "C:/Windows/System32/OpenSSH/ssh-keygen.exe"
+{{ end }}
+[commit]
+	gpgsign = true
+
+[includeIf "gitdir:~/Repos/work/"]
+	path = ~/.gitconfig-work
+
+[includeIf "gitdir:~/Repos/personal/"]
+	path = ~/.gitconfig-personal

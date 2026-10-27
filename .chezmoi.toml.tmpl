@@ -1,1 +1,7 @@
+{{- $personalEmail := promptStringOnce . "personalEmail" "Email personal" -}}
+{{- $workEmail := promptStringOnce . "workEmail" "Email de trabajo" -}}
 sourceDir = "{{ .chezmoi.homeDir }}/Repos/personal/dotfiles"
+
+[data]
+    personalEmail = {{ $personalEmail | quote }}
+    workEmail = {{ $workEmail | quote }}

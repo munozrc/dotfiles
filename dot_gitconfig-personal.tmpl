@@ -1,0 +1,7 @@
+[user]
+	name = "Carlos Muñoz"
+	email = {{ .personalEmail }}
+	signingkey = ~/.ssh/id_ed25519_personal.pub
+
+[core]
+	sshCommand = C:/Windows/System32/OpenSSH/ssh.exe -o IdentitiesOnly=yes -i {{ .chezmoi.homeDir }}/.ssh/id_ed25519_personal.pub
